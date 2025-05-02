@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Start in dark mode by default -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhay Isal | Embedded Systems & Robotics</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== Navigation Bar ===== -->
+    <nav class="navbar sticky">
+        <div class="container">
+            <a href="#hero" class="nav-logo" data-aos="fade-down" data-aos-delay="100">Abhay Isal</a>
+            <ul class="nav-menu" data-aos="fade-down" data-aos-delay="200">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle light/dark theme" data-aos="fade-down" data-aos-delay="300">
+                <i class="fas fa-sun"></i> <!-- Sun icon for default dark mode -->
+            </button>
+        </div>
+    </nav>
+
+    <!-- ===== Hero Section ===== -->
+    <header id="hero" class="hero-section section">
+         <!-- Optional Subtle Background Element -->
+         <div class="hero-bg-pattern"></div>
+        <div class="container hero-content">
+            <div class="hero-text" data-aos="fade-right" data-aos-duration="800">
+                <h1>Abhay Isal</h1>
+                <p class="subtitle gradient-text">Building Tomorrow's Tech, Today.</p> <!-- Catchy Intro -->
+                <p class="intro">
+                    Electronics & Telecommunication student crafting innovative solutions at the intersection of IoT, embedded systems, and robotics.
+                </p>
+                <div class="hero-links">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="https://www.linkedin.com/in/abhayisal" target="_blank" class="btn btn-secondary">LinkedIn <i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+                 <img src="/Users/abhiisal/Desktop/portfolio/Abhay_Isal_passport.jpg" alt="Abhay Isal professional photo">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ===== About Me Section ===== -->
+        <section id="about" class="section bg-alt">
+            <div class="container" data-aos="fade-up">
+                <h2 class="section-title">About Me</h2>
+                <p>
+                    A multidisciplinary professional with expertise in Electronics & Telecommunication, IoT, and Business Administration. Experienced in project management, embedded systems, and UI design for dashboards. Strong leadership skills in managing teams and financial operations. Driven by a passion for integrating hardware and software to create impactful technology.
+                </p>
+            </div>
+        </section>
+
+        <!-- ===== Key Expertise / Skills Section ===== -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Key Expertise</h2>
+                <div class="skills-grid">
+                    <!-- Add data-aos staggered effect -->
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                        <i class="fas fa-microchip skill-icon"></i>
+                        <h3>Embedded Systems</h3>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
+                        <i class="fas fa-cogs skill-icon"></i>
+                        <h3>Automation</h3>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                        <i class="fas fa-network-wired skill-icon"></i>
+                        <h3>IoT</h3>
+                    </div>
+                     <div class="skill-card" data-aos="fade-up" data-aos-delay="250">
+                        <i class="fas fa-code-branch skill-icon"></i>
+                        <h3>CAN Protocol</h3>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                        <i class="fas fa-users skill-icon"></i>
+                        <h3>Team Management</h3>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="350">
+                        <i class="fas fa-chart-line skill-icon"></i>
+                        <h3>Financial Analysis</h3>
+                    </div>
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                         <i class="fas fa-comments skill-icon"></i>
+                        <h3>Communication</h3>
+                    </div>
+                     <div class="skill-card" data-aos="fade-up" data-aos-delay="450">
+                        <i class="fas fa-bullseye skill-icon"></i>
+                        <h3>Lead Generation</h3>
+                    </div>
+                     <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                        <i class="fas fa-ethernet skill-icon"></i>
+                        <h3>Comm Protocols</h3> <!-- Shortened -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Projects Section ===== -->
+        <section id="projects" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <h3>Drivers assistance display using CAN</h3>
+                        <p>Cost-effective obstacle detection using ultrasonic sensors, transmitting data via CAN protocol to a Raspberry Pi display for real-time driver feedback.</p>
+                        <div class="tech-stack">
+                            <strong>Tech:</strong> <span>CAN Protocol</span> <span>Raspberry Pi</span> <span>Ultrasonic Sensors</span> <span>Python</span>
+                        </div>
+                        <!-- Optional Link -->
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3>Automatic liquid filling system</h3>
+                        <p>Implemented an automated conveyor belt system for precise, programmable liquid filling, featuring bottle counting and auto-resume functionality.</p>
+                         <div class="tech-stack">
+                             <strong>Tech:</strong> <span>Automation</span> <span>Conveyor System</span> <span>Microcontroller</span> <span>Sensors</span>
+                        </div>
+                    </div>
+                     <!-- Project Card 3 -->
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <h3>Attendance system using RFID</h3>
+                        <p>Developed an RFID-based attendance system where scans log student IDs and timestamps directly to a Google Sheet via an ESP32 microcontroller.</p>
+                         <div class="tech-stack">
+                             <strong>Tech:</strong> <span>RFID</span> <span>ESP32</span> <span>IoT</span> <span>Google Sheets API</span> <span>C++ (Arduino)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Internships & Experience Section ===== -->
+        <section id="experience" class="section">
+             <div class="container">
+                 <h2 class="section-title" data-aos="fade-up">Experience & Responsibilities</h2>
+                 <div class="experience-timeline">
+                     <!-- Internship Item -->
+                    <div class="timeline-item" data-aos="fade-right" data-aos-anchor=".experience-timeline">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-effect">
+                            <span class="timeline-date">Jun 2024 - Jul 2024</span>
+                            <h3>Intern @ Gustovalley Tecnovations</h3>
+                            <p>Focused on IoT & embedded systems, building a strong foundation in hardware/software integration.</p>
+                        </div>
+                    </div>
+                     <!-- Responsibility Item -->
+                     <div class="timeline-item" data-aos="fade-left" data-aos-anchor=".experience-timeline">
+                         <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-effect">
+                             <span class="timeline-date accent-secondary">Leadership Role</span> <!-- Using secondary accent -->
+                            <h3>Manager Team INVICTUS MIT Aoe</h3>
+                             <p>Enhanced communication & coordination via liaison with authorities/sponsors; managed logistics. Bridged technical expertise and strategic management.</p>
+                        </div>
+                     </div>
+                     <!-- Responsibility Item -->
+                      <div class="timeline-item" data-aos="fade-right" data-aos-anchor=".experience-timeline">
+                          <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-effect">
+                              <span class="timeline-date accent-secondary">Financial Role</span> <!-- Using secondary accent -->
+                            <h3>Treasurer - Robotics Club & NSS MIT AOE</h3>
+                             <p>Oversaw team finances: billing, price verification, record-keeping, reimbursements. Negotiated with vendors, ensuring timely payments. Developed financial acumen & organizational skills.</p>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </section>
+
+        <!-- ===== Education Section ===== -->
+        <section id="education" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Education</h2>
+                <div class="education-list">
+                     <!-- Education Item 1 -->
+                    <div class="education-item" data-aos="fade-up" data-aos-delay="100">
+                        <h3>MIT ACADEMY OF ENGINEERING, PUNE</h3>
+                        <p>B.Tech. - Electronics & Telecommunication Eng. (2022 - 2026)</p>
+                        <p>CGPA: <span class="highlight">8.44 / 10</span></p>
+                    </div>
+                     <!-- Education Item 2 -->
+                    <div class="education-item" data-aos="fade-up" data-aos-delay="200">
+                         <h3>VIDYABHARATI MAHAVIDYALAYA, AMRAVATI</h3>
+                        <p>12th | MSBSHSE (2022)</p>
+                        <p>Percentage: <span class="highlight">78.33 / 100</span></p>
+                    </div>
+                     <!-- Education Item 3 -->
+                    <div class="education-item" data-aos="fade-up" data-aos-delay="300">
+                         <h3>EKVIRA SCHOOL OF BRILLIANTS</h3>
+                        <p>10th | CBSE (2020)</p>
+                        <p>Percentage: <span class="highlight">88.20 / 100</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- ===== Achievements & Certifications Section ===== -->
+        <section id="achievements" class="section">
+            <div class="container achievement-container">
+                 <div class="achievement-column" data-aos="fade-right">
+                    <h3 class="sub-section-title">Certifications</h3>
+                     <div class="certification-item">
+                        <h4><i class="fas fa-award accent-secondary"></i> INDUSTRIAL IOT 4.0</h4>
+                        <p>Provider: SWAYAM NPTEL</p>
+                        <p>Skills: IoT sensor integration, communication protocols</p>
+                        <p>Aggregate: <span class="highlight">83 / 100</span></p>
+                    </div>
+                 </div>
+                 <div class="achievement-column" data-aos="fade-left">
+                     <h3 class="sub-section-title">Activities</h3>
+                     <ul>
+                         <li><i class="fas fa-robot list-icon"></i> Robocon 2024 Participant</li>
+                         <li><i class="fas fa-lightbulb list-icon"></i> Mindspark COEP 2023-24 Participant</li>
+                         <li><i class="fas fa-tools list-icon"></i> Technovanza VJTI 2024 Participant</li>
+                         <li><i class="fas fa-hands-helping list-icon"></i> Active member, Saksham NGO</li>
+                         <li><i class="fas fa-users list-icon"></i> Member, NSS MIT Aoe</li>
+                     </ul>
+                 </div>
+            </div>
+        </section>
+
+        <!-- ===== Contact Section ===== -->
+        <section id="contact" class="section bg-alt">
+            <div class="container text-center" data-aos="zoom-in">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-subtitle">Interested in collaborating or have a question? Reach out!</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:abhay.isal@mitaoe.ac.in">abhay.isal@mitaoe.ac.in</a></p>
+                    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/abhayisal" target="_blank">linkedin.com/in/abhayisal</a></p>
+                    <p><i class="fas fa-map-marker-alt"></i> Alandi, Pune, India</p>
+                    <p><i class="fas fa-phone"></i> +91 86000 13163</p>
+                </div>
+                <a href="mailto:abhay.isal@mitaoe.ac.in" class="btn btn-primary contact-button">Send Email</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== Footer ===== -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Abhay Isal. Crafted with <i class="fas fa-heart" style="color: #e25555;"></i>.</p>
+            <!-- Optional: Social Links Mini -->
+             <div class="footer-social">
+                 <a href="https://www.linkedin.com/in/abhayisal" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                 <!-- Add other relevant links like GitHub if available -->
+             </div>
+        </div>
+    </footer>
+
+    <!-- AOS Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>

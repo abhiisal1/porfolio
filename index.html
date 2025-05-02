@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Portfolio Showcase</title>
+    <!-- Google Fonts (Optional - using similar fonts as index.html for consistency) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome (Optional - if you want icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS Library CSS (For fade-in effects) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="landing_style.css">
+</head>
+<body>
+
+    <header class="landing-header">
+        <div class="container">
+            <h1 data-aos="fade-down">Team Portfolio Showcase</h1>
+            <p data-aos="fade-down" data-aos-delay="100">Meet the Team and Explore Their Work</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="team" class="team-section">
+            <div class="container">
+                <div class="portfolio-grid">
+
+                    <!-- Portfolio Card 1: Abhay Isal -->
+                    <div class="portfolio-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="/Users/abhiisal/Desktop/portfolio/Abhay_Isal_passport.jpg" alt="Abhay Isal Photo" class="profile-pic">
+                        <h2>Abhay Isal</h2>
+                        <p class="role-description">Embedded Systems & Robotics Enthusiast</p>
+                        <a href="abhay.html" class="btn">View Portfolio <i class="fas fa-arrow-right"></i></a>
+                        <!--
+                        IMPORTANT:
+                        1. Replace 'placeholder-abhay.jpg' with the actual path to Abhay's photo.
+                           Keep the photo in the same directory or provide the correct path.
+                           Recommended size: Square, ~200x200 pixels.
+                        2. 'href="index.html"' assumes index.html is in the same directory.
+                           Adjust if needed.
+                        -->
+                    </div>
+
+                    <!-- Portfolio Card 2: Dhanashree Borkar -->
+                    <div class="portfolio-card" data-aos="fade-up" data-aos-delay="300">
+                        <img src="/Users/abhiisal/Desktop/portfolio/WhatsApp Image 2025-04-25 at 23.46.55.jpeg" alt="Dhanashree Borkar Photo" class="profile-pic">
+                        <h2>Dhanashree Borkar</h2>
+                        <p class="role-description">Electronics & Telecommunication Student | IoT & AI/ML</p>
+                         <a href="dhanashree.html" class="btn">View Portfolio <i class="fas fa-arrow-right"></i></a>
+                        <!--
+                        IMPORTANT:
+                        1. Replace 'placeholder-dhanashree.jpg' with the actual path to Dhanashree's photo.
+                        2. 'href="dhanashree.html"' assumes dhanashree.html is in the same directory.
+                           Adjust if needed.
+                        -->
+                    </div>
+
+                    <!-- Portfolio Card 3: Payal Misal -->
+                    <div class="portfolio-card" data-aos="fade-up" data-aos-delay="400">
+                        <img src="/Users/abhiisal/Desktop/portfolio/PHOTO-2025-05-03-00-27-54.jpg" alt="Payal Misal Photo" class="profile-pic">
+                        <h2>Payal Misal</h2>
+                        <p class="role-description">Data Scientist | Drone Enthusiast | AI Explorer</p>
+                        <a href="payal.html" class="btn">View Portfolio <i class="fas fa-arrow-right"></i></a>
+                        <!--
+                        IMPORTANT:
+                        1. Replace 'placeholder-payal.jpg' with the actual path to Payal's photo.
+                        2. 'href="payal.html"' assumes payal.html is in the same directory.
+                           Adjust if needed.
+                        -->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="landing-footer">
+        <div class="container">
+            <p>© 2024 Team Project. Deployed via AWS EC2.</p>
+            <!-- Optional: Add team or project links here -->
+        </div>
+    </footer>
+
+    <!-- AOS Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS (Animate on Scroll)
+        AOS.init({
+            duration: 800, // Animation duration
+            once: true,    // Animation happens only once
+            offset: 50     // Trigger animation slightly before element is visible
+        });
+    </script>
+
+</body>
+</html>
